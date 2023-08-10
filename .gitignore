@@ -1,0 +1,6 @@
+CANC.ipynb
+.git/
+venv_rossmann_store/
+readme_TEMPLATE.md
+models/
+__pycache__/

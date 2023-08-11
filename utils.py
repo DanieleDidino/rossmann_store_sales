@@ -49,11 +49,16 @@ def print_best_model_metrics(gs, X, y):
     y: actual target
     """
     print(f"Best parameters:\n{gs.best_params_}")
-    print(f"\nBest score: {gs.best_score_:.3f}")
+
+    print(f"\nBest score:")
+    print(f"neg_mean_squared_error: {gs.best_score_:.3f}")
     print(f"RMSE: {np.sqrt(-1*gs.best_score_):.3f}")
+
     score = gs.score(X, y)
-    print(f"\nneg_mean_squared_error on the full train set: {score:.3f}")
-    print(f"RMSE on the full train set: {np.sqrt(-1*score):.3f}")
+    print("\nConsidering the full train set:")
+    print(f"neg_mean_squared_error: {score:.3f}")
+    print(f"RMSE: {np.sqrt(-1*score):.3f}")
+
     y_pred = gs.predict(X)
-    print(f"\nMean squared error = {mean_squared_error(y, y_pred, squared=False):.2f}")
+    # print(f"Mean squared error = {mean_squared_error(y, y_pred, squared=False):.2f}")
     print(f"Root Mean Square Percentage Error: {RMSPE(y, y_pred):.2f}")

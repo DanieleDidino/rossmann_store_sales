@@ -4,19 +4,27 @@ Rossman Kaggle Mini-Competition: Forecast sales using store, promotion, and comp
 
 This is a Kaggle competition and can be found [here](https://www.kaggle.com/competitions/rossmann-store-sales/overview)
 
-## Language Used : Python --version: 3.10.6
+### Language Used : Python --version: 3.10.6
 
 ## Setup <---------- TO EDIT
 
-1 - Create a conda environment
+1. Create a virtual environment: `python3 -m venv .venv`
+2. Activate virtual environment: `source .venv/bin/activate`
+3. Install the packages: `pip install -r requirements.txt`
+4. Run the jupyter Notebooks (descriptives, model_development etc.)
+5. To make predicitons run `ADD_FILE_NAME` in terminal or use this [Streamlit app](ADD_https)
 
-2 - Install Pip
-```conda install pip```
+## Repository Contents
 
-3 - ```pip install -r requirements.txt```
-
-4 - Run the `ADD_file_name` Notebook to make predictions
-
+1. data: folder containing data.
+2. 1_EDA: 
+3. 2_baseline_model:
+4. functions.py : python scripts containing all functions used.
+5. readme.md 
+6. requirements.txt
+7. solution.ipynb 
+8. pipeline.py : python script to run holdout data.
+9. pipeline : Folder containing pipeline.
 
 ## Feature <---------- TO EDIT
 

@@ -42,6 +42,11 @@ def RMSPE(y, y_pred):
      return rmspe
 
 
+def RMSPE_score_func(y, y_pred, **kwargs):
+     rmspe = np.sqrt(np.sum(((y - y_pred) / y)**2) / len(y))
+     return rmspe
+
+
 def print_best_model_metrics(gs, X, y):
     """"
     gs: fitted GridSearch object

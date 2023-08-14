@@ -1,3 +1,4 @@
+.gitignore
 .git/
 venv_rossmann_store/
 readme_TEMPLATE.md

@@ -184,7 +184,6 @@ list_cat_attribs = ["StoreType", "Assortment"]
 # - a name
 # - a transformer
 # - a list of names (or indices) of columns to which the transformer is applied
-
 cols_transformer = ColumnTransformer([
     # apply "num_pipeline" to numerical columns
     ('num', num_pipeline, list_num_attribs),

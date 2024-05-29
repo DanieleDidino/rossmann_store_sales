@@ -1,8 +1,4 @@
-.gitignore
 .git/
 venv_rossmann_store/
-readme_TEMPLATE.md
-readme_TEMPLATE_2.md
-models/
 wandb/
-__pycache__/
+
